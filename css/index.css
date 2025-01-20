@@ -14,7 +14,7 @@ body {
   margin: 0; /* Remove default margin */
 }
 .container {
-  background-color: rgb(250, 176, 234);
+  background-color: rgb(243, 150, 223);
   margin-left: auto;
   margin-right: auto;
   padding-left: 24px;
@@ -23,11 +23,12 @@ body {
   padding-bottom: 16px;
 }
 .text {
-  color: pink;
+  color: rgb(48, 22, 27);
   justify-content: center;
   align-items: center;
   display: flex;
-  font-size: 1.25rem; /* Equivalent to 20px if the root font size is 16px */
+  font-size: 1.25rem;
+  font-family: 'Times New Roman', Times, serif; /* Equivalent to 20px if the root font size is 16px */
 }
 .s-text {
   color: pink;
@@ -82,12 +83,20 @@ body {
 }
 
 .btn {
-  background-color: pink;
+  background-color: rgb(245, 129, 216);
   width: 100%; /* Make button fill the width of its container */
   border-radius: 0.5rem;
   height: 2.5rem;
-  margin-bottom: 1.25rem; /* Equivalent to my-5 in Tailwind */
+  margin-bottom: 1.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-style: italic; /* Equivalent to 16px if the root font size is 16px */
+  color: rgb(19, 8, 8);
+  transition: background-color 0.2s ease;
 }
+   /* Equivalent to my-5 in Tailwind */
+
+
 
 dialog[open] {
   -webkit-animation: show 1s ease normal;
