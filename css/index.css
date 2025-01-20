@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Courier New', Courier, monospace;
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
@@ -14,7 +14,7 @@ body {
   margin: 0; /* Remove default margin */
 }
 .container {
-  background-color: rgb(255, 255, 255);
+  background-color: black;
   margin-left: auto;
   margin-right: auto;
   padding-left: 24px;
@@ -23,14 +23,14 @@ body {
   padding-bottom: 16px;
 }
 .text {
-  color: rgb(248, 145, 162);
+  color: pink;
   justify-content: center;
   align-items: center;
   display: flex;
-  font-size: 1.50rem; /* Equivalent to 20px if the root font size is 16px */
+  font-size: 1.25rem; /* Equivalent to 20px if the root font size is 16px */
 }
 .s-text {
-  color: rgb(253, 164, 179);
+  color: pink;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -66,7 +66,7 @@ body {
   justify-content: space-between; /* Distribute space, but you can adjust as needed */
   /* Existing styles */
   background-color: pink;
-  padding: 35px;
+  padding: 24px;
   border-radius: 8px;
   width: 250px;
   height: 200px;
@@ -81,46 +81,12 @@ body {
   align-items: center; /* Center horizontally */
 }
 
-/* From Uiverse.io by mrhyddenn */ 
-button {
-  background: #f08fc0;
-  border: none;
-  padding: 10px 20px;
-  display: inline-block;
-  font-size: 15px;
-  font-weight: 600;
-  width: 120px;
-  text-transform: uppercase;
-  cursor: pointer;
-  transform: skew(-21deg);
-}
-
-span {
-  display: inline-block;
-  transform: skew(21deg);
-}
-
-button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 100%;
-  left: 0;
-  background: rgb(71, 12, 62);
-  opacity: 0;
-  z-index: -1;
-  transition: all 0.5s;
-}
-
-button:hover {
-  color: #fff;
-}
-
-button:hover::before {
-  left: 0;
-  right: 0;
-  opacity: 1;
+.btn {
+  background-color: pink;
+  width: 100%; /* Make button fill the width of its container */
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  margin-bottom: 1.25rem; /* Equivalent to my-5 in Tailwind */
 }
 
 dialog[open] {
